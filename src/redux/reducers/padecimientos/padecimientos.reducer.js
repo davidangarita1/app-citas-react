@@ -7,14 +7,14 @@ const padecimientosReducer = (state = initialState, {type, payload}) => {
 			return {
 				...state,
 				isLoading: true,
-				padecimiento: null,
+				padecimientos: null,
 				errorMessage: null,
 			};
 		case actionTypes.PADECIMIENTOS_LOAD_SUCCESS:
 			return {
 				...state,
 				isLoading: false,
-				padecimiento: payload,
+				padecimientos: payload,
 			};
 		case actionTypes.PADECIMIENTOS_LOAD_ERROR:
 			return {

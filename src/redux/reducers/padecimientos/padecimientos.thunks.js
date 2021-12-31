@@ -1,7 +1,7 @@
 import PadecimientosService from '../../../services/padecimientos.service';
 import actions from './padecimientos.actions';
 
-export const loadPadecimientosAsync = (dispatch) => {
+export const loadPadecimientosAsync = () => (dispatch) => {
     dispatch(actions.padecimientosLoadStart());
 
     PadecimientosService.getAllPadecimientos()
