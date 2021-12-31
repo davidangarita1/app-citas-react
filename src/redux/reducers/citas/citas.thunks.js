@@ -1,7 +1,7 @@
 import CitasService from '../../../services/citas.service';
 import actions from './citas.actions';
 
-export const loadCitasAsync = (dispatch) => {
+export const loadCitasAsync = () => (dispatch) => {
 		dispatch(actions.citasLoadStart());
 
 		CitasService.getAllCitas()
