@@ -1,4 +1,5 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Provider } from 'react-redux';
 import configureStore from './redux/store/configureStore';
 import Home from './pages/HomePage';

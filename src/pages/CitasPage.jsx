@@ -15,7 +15,7 @@ const Citas = () => {
 			<h1>Lista de Citas</h1>
 			{isLoading && <h3>Cargando...</h3>}
 			{errorMessage && <h3>{errorMessage}</h3>}
-			<table className="table">
+			<table className="table table-bordered table-striped">
 				<thead className="thead">
 					<tr>
 						<th>Identificación Paciente</th>
@@ -34,7 +34,7 @@ const Citas = () => {
 							<td>{cita.nombreMedico} {cita.apellidosMedico}</td>
 							<td>{cita.fechaReservaCita}</td>
 							<td>{cita.horaReservaCita}</td>
-							<td>{cita.estadoReservaCita}</td>
+							<td>{cita.estadoReservaCita ? 'Activa' : 'Cancelada'}</td>
 						</tr>
 					))}
 				</tbody>

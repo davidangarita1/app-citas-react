@@ -15,7 +15,7 @@ const Padecimientos = () => {
 			<h1>Lista de Padecimientos</h1>
 			{isLoading && <h3>Cargando...</h3>}
 			{errorMessage && <h3>{errorMessage}</h3>}
-			<table className="table">
+			<table className="table table-bordered table-striped">
 				<thead className="thead">
 					<tr>
 						<th>Identificación Paciente</th>
