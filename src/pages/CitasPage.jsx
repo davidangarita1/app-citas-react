@@ -8,6 +8,7 @@ const Citas = () => {
 
 	useEffect(() => {
 		dispatch(loadCitasAsync());
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	return (

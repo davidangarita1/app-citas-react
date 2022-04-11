@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
 	PADECIMIENTOS_LOAD_START: "PADECIMIENTOS_LOAD_START",
 	PADECIMIENTOS_LOAD_SUCCESS: "PADECIMIENTOS_LOAD_SUCCESS",
